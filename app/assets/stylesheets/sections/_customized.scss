@@ -1,0 +1,14 @@
+#customized_image_block {
+  right: 0px;
+  position: absolute;
+  opacity: 0.8;
+  filter: alpha(opacity=80);  /* For IE8 and earlier */
+}
+
+#customized_name_block {
+  position: absolute;
+  right: 0px;
+  margin: 10px 5px 0px 5px;
+  font-size: 14px;
+  font-weight: bold;
+}

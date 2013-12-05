@@ -10,6 +10,7 @@ article.aggregate {
   a {
     text-decoration: none;
     color: black;
+	font-size: 50%;
   }
   h1 {
     background-size: 10px 10px;
@@ -20,8 +21,8 @@ article.aggregate {
 .one-tile {
   article.aggregate {
     h1 {
-      font-size: 200px;
-      line-height: 329px;
+      font-size: 160px;
+      line-height: 300px;
     }
   }
 }

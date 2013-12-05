@@ -1,0 +1,15 @@
+<section class="one-tile">
+  <article class="aggregate" id="aggregate_<%%= @id %>">
+    <div id="customized_image_block">
+      <image id="img_url" src="<%= asset_path('ribbon_white.png') %>" />
+    </div>
+    <div id="customized_name_block">
+      <%%= @name %>
+    </div>
+    <h1 class="code">
+      <a href="/radiator/?aggregate_project_id=<%%= @id %>">
+        <%%= @code %>
+      </a>
+    </h1>
+  </article>
+</section>

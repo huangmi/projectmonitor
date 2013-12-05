@@ -191,7 +191,7 @@ class Project < ActiveRecord::Base
     json = super # TODO: Remove before merge
     json["project_id"] = self.id
     json["build"] = super(
-      only: [:code, :id, :statuses, :building],
+      only: [:code, :id, :name, :statuses, :building],
       root: false)
       .merge({"published_at" => published_at})
       .merge({"status" => status_in_words})

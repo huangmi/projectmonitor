@@ -13,6 +13,8 @@ article.build.building {
 }
 
 article.build {
+  position: relative;
+  
   h1, aside {
     background-size: 10px 10px;
   }
@@ -59,8 +61,8 @@ article.build {
 .one-tile {
   article.build {
     h1 {
-      font-size: 200px;
-      line-height: 249px;
+      font-size: 160px;
+      line-height: 220px;
     }
 
     .last-build-label { display: none; }
