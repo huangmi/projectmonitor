@@ -20,6 +20,11 @@ class StatusController < ApplicationController
       log.update_method = "Webhooks"
       log.save!
 
+      #The following is a fix for incorrect teamcity build link
+      if payload.instance_of?(TeamCityJsonPayload)
+        project.parsed_url = params['build']['buildStatusUrl']
+      end
+
       project.save!
       head :ok
     else
