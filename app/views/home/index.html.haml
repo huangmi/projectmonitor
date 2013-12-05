@@ -11,4 +11,4 @@
 :coffeescript
   $ ->
     new ProjectMonitor.Routers.HomeRouter({projects: projects})
-    Backbone.history.start({pushState: true})
+    Backbone.history.start({pushState: true, root: "/radiator/"})

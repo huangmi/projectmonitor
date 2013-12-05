@@ -11,7 +11,7 @@ var GithubRefresh = (function () {
 
     refresh : function () {
       $.ajax({
-        url: '/github_status.json',
+        url: '/radiator/github_status.json',
         timeout: (pollIntervalSeconds - 1) * 1000,
         success: function(response) {
           var status = response.status;

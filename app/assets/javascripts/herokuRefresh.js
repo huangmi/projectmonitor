@@ -11,7 +11,7 @@ var HerokuRefresh = (function () {
 
     refresh : function () {
       $.ajax({
-        url: '/heroku_status.json',
+        url: '/radiator/heroku_status.json',
         timeout: (pollIntervalSeconds - 1) * 1000,
         success: function(response) {
           var status = response.status;

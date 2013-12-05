@@ -47,7 +47,7 @@ var ProjectEdit = {};
       $('empty_fields').addClass('hide');
       $('#tracker_status .pending').removeClass('hide');
       $.ajax({
-        url: "/projects/validate_tracker_project",
+        url: "/radiator/projects/validate_tracker_project",
         type: "post",
         data: {
           id: document.location.pathname.split("/")[2],
@@ -149,7 +149,7 @@ var ProjectEdit = {};
 
     $('#polling .pending').removeClass('hide');
     $.ajax({
-      url: "/projects/validate_build_info",
+      url: "/radiator/projects/validate_build_info",
       type: "post",
       data: $('form').serialize(),
       success: function (result) {

@@ -1,4 +1,7 @@
 ProjectMonitor::Application.routes.draw do
+
+scope '/radiator' do
+
   devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks", :sessions => "sessions" }
   mount JasmineRails::Engine => "/specs" if defined?(JasmineRails)
 
@@ -36,4 +39,7 @@ ProjectMonitor::Application.routes.draw do
 
   get 'styleguide' => 'home#styleguide'
   root :to => 'home#index'
+  
+end
+
 end

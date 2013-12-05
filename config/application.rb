@@ -17,6 +17,7 @@ module ProjectMonitor
     config.assets.enabled = true
     config.assets.version = '1.1'
     config.assets.initialize_on_precompile = false
+	config.assets.prefix = "/radiator/assets"
     config.assets.paths << Rails.root.join('app','assets','skins')
 
     config.action_mailer.default_url_options = Rails.configuration.emailer_host.to_hash.symbolize_keys

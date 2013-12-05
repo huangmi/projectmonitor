@@ -5,7 +5,7 @@ var VersionCheck = function() {
 
   var versionRequest = function(success) {
     $.ajax({
-      url: '/version',
+      url: '/radiator/version',
       method: 'GET',
       success: success
     });
