@@ -8,8 +8,8 @@
     = yield :head
   %body
     #header
-      = link_to(image_tag('pivotallabs-logo.png', :class => 'company_logo'), '/')
-      = link_to(image_tag('ci-logo.png'), '/')
+      = link_to(image_tag('pivotallabs-logo.png', :class => 'company_logo'), root_url)
+      = link_to(image_tag('ci-logo.png'), root_url)
       #top_right
         - if current_user.present?
           Hello, #{current_user.login}
