@@ -13,6 +13,8 @@ module ProjectMonitor
 
     config.serve_static_assets = true
 
+	config.action_dispatch.default_headers['X-Frame-Options'] = "ALLOWALL"
+	
     config.assets.compile = true
     config.assets.enabled = true
     config.assets.version = '1.1'
