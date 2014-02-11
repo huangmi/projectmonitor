@@ -16,3 +16,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+#top_banner {
+ margin: 15px;
+ padding: 10px;
+ font-size: 50px;
+ font-weight: bold;
+ text-align: center;
+ background-color: #93cdad;
+ background-size: 10px 10px;
+ @include linear-gradient(0deg, #93cdad 90%, #b6ddc7 10%);
+ //width: 1840px;
+}

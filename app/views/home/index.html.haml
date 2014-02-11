@@ -5,6 +5,11 @@
     = link_to "HEROKU IS DOWN", 'http://status.heroku.com'
   .rubygems
     = link_to "RUBYGEMS IS DOWN", 'http://status.rubygems.org'
+
+- if defined? @agg_project
+  - if !(@agg_project.name.start_with? "_")
+    #top_banner #{@agg_project.name}
+	
 .tiles
 :javascript
   var projects = #{@projects.to_json};

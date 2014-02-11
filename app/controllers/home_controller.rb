@@ -9,7 +9,9 @@ class HomeController < ApplicationController
 
   def index
     if aggregate_project_id = params[:aggregate_project_id]
-      projects = AggregateProject.find(aggregate_project_id).projects
+      agg_project = AggregateProject.find(aggregate_project_id)
+      @agg_project = agg_project
+      projects = agg_project.projects
     else
       aggregate_projects = AggregateProject.displayable(params[:tags])
       standalone_projects = Project.standalone.displayable(params[:tags])
